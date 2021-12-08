@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Duck Health</title>
+</head>
+<body onresize="modificar()">
+  <header class="cabecalho">
+    <div class="cabecalho__container">
+      <img src="imagens/pato75.png" alt="Imagem-logo" class="cabecalho__item cabecalho__item--background">
+      <div class="menu-toggle">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+      <nav class="cabecalho__item cabecalho__item--sumir">
+        <ul class="cabecalho__menu">
+          <li><a href="#inicio" class="cabecalho__link" onclick="ativar()">Inicio</a></li>
+          <li><a href="#sobre" class="cabecalho__link" onclick="ativar()">Sobre</a></li>
+          <li><a href="#exames" class="cabecalho__link" onclick="ativar()">Exames</a></li>
+          <li><a href="#contato" class="cabecalho__link" onclick="ativar()">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="principal">
+    <section class="principal__item principal__item--duckHealth" id="inicio">
+      <div class="principal__container principal__container--duckHealth">
+        <div class="principal__descricao">
+          <h1 class="principal__titulo">Duck Health</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quibusdam pariatur impedit cupiditate laboriosam facere et itaque similique consequatur sunt doloribus dolor, tempora rem blanditiis enim. Natus iure ad accusantium!</p>
+          <button class="principal__acesso">Acessar Laudos</button>
+        </div>
+        <div class="principal__descricao principal__descricao--imagem">
+          <img src="imagens/bg-banner-certo.png" alt="" class="principal__imagem">
+        </div>
+      </div>
+    </section>
+
+    <section class="principal__item principal__item--sobre" id="sobre">
+      <div class="principal__container principal__container--sobre">
+        <div class="principal__carousel">
+          <img src="imagens/doctor-50.png" alt="" class="principal__imagem">
+        </div>
+        <div class="principal__sobre">
+          <h2 class="principal__subtitulo">Sobre Nós</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, repellat! Sed sit illum tenetur laudantium porro dolore quisquam odit inventore officiis magnam nam, error quaerat dicta, recusandae doloribus non voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aliquid sit sequi amet officiis molestias cumque a quas delectus minus quae dolorem minima soluta veritatis adipisci et, quisquam molestiae voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, inventore reiciendis modi esse dolorem unde sit consectetur dignissimos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="principal__item principal__item--exames" id="exames">
+      <div class="principal__container principal__container--exames">
+        <h2 class="principal__subtitulo principal__subtitulo--exames">Exames</h2>
+        <article class="principal__article">
+          <div class="card">
+            <img src="imagens/doctor-50.png" alt="Exame-01" class="img">
+            <p class="principal__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam.</p>
+          </div>
+          <div class="card card--meio">
+            <img src="imagens/doctor-50.png" alt="Exame-02" class="img">
+            <p class="principal__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam.</p>
+          </div>
+          <div class="card">
+            <img src="imagens/doctor-50.png" alt="Exame-03" class="img">
+            <p class="principal__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam.</p>
+          </div>
+          <div class="card">
+            <img src="imagens/doctor-50.png" alt="Exame-04" class="img">
+            <p class="principal__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam.</p>
+          </div>
+          <div class="card">
+            <img src="imagens/doctor-50.png" alt="Exame-05" class="img">
+            <p class="principal__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="principal__item principal__item--contato" id="contato">
+      <div class="principal__container principal__container--contato">
+        <article class="principal__artigo">
+          <div class="principal__endereco">
+            <h2 class="principal__subtitulo principal__subtitulo--contato">Endereço</h2>
+            <ul class="principal__enderecoList">
+              <li class="principal__itemList"><img src="imagens/ar.png" alt="Imagem-Ar condicionado" class="icon"><span class="principal__textoItem">Rua dos Doidões, Bairro Muito Doido, N° 127</span></li>
+              <li class="principal__itemList"><img src="imagens/predio.png" alt="Imagem-predio" class="icon"><span class="principal__textoItem">Ambiente climatizado, para o seu conforto ao atende-lo!</span></li>
+              <li class="principal__itemList"><img src="imagens/bola.png" alt="Imagem-bola" class="icon"><span class="principal__textoItem">Sala com brinquedos e passa-tempo para as crianças!</span></li>
+            </ul>
+          </div>
+          <aside class="principal__artigo principal__artigo--email">
+            <div class="principal__email">
+              <div class="principal__inputContainer">
+                <input type="text" class="principal__input" placeholder="Nome">
+                <input type="text" class="principal__input" placeholder="Email">
+              </div>
+              <input type="text" class="principal__input principal__input--tudo principal__input--ajuda" placeholder="Como podemos ajudar? Escreva sua dúvida">
+              <button class="principal__input principal__input--tudo principal__input--botao">Enviar Mensagem</button>
+            </div>
+          </aside>
+        </article>
+        <article class="principal__artigo principal__artigo--imagem">
+          <img src="imagens/maps.png" alt="" class="principal__imagemContato">
+          <aside>
+            <h2 class="principal__subtitulo">Contatos</h2>
+            <ul class="principal__contatoList">
+              <li class="principal__itemList"><img src="imagens/telefone.png" alt="Imagem-telefone" class="icon"><span class="principal__textoItem">67(0000-0000) ou 67(00000-0000)</span></li>
+              <li class="principal__itemList"><img src="imagens/instagram.png" alt="Imagem-instagram" class="icon"><span class="principal__textoItem">@Duck_Health</span></li>
+              <li class="principal__itemList"><img src="imagens/facebook.png" alt="Imagem-facebook" class="icon"><span class="principal__textoItem">Duck Health</span></li>
+              <li class="principal__itemList"><img src="imagens/linkedin.png" alt="Imagem-linkedin" class="icon"><span class="principal__textoItem">Duck Health</span></li>
+            </ul>
+          </aside>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape__container">
+      <img src="imagens/pato75.png" alt="Imagem-logo" class="rodape__imagem">
+      <h2>Duck Health</h2>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+
+  <!--
+    (((((#####(((((((((///*,,............,,,,,,,,,,,,,,,,,,,,,,,,,,,,****,,,,,,,,,,**//*******
+(((#######((((((##((((((/*,...........,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*********,,,,,,,*
+(########(((((((((((((/////*,,..........,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,***///**,,,,*****
+(((((((##(((##((((////((((/**,,,,,..,..*,..........*,,,,,,,,,,,,,,,,,,,,,*******,,,,,***//
+(((((((######((((/((((((//*,,,,,.,.....................(,,,,,,,,,,,,,,,,,,,******,,****//(
+//((########((((((((///*,,,,,,,,,(........................,,,,,,,,,,,,,,,,,,,,***,,***//((
+(###############(((//*,,,,,,,,,,...........................,,,,,,,,,,,,,,.,,,,,,,,,,**/((#
+###############((//*,,,,,,,,,,#..............................*,,,,,,,,,,,...,,,,,,,,*/(###
+#############((/*,,,,,,,,,,,,*................................/,,,,,,,,,,,,,.....,,,/(####
+//((((/((/////**,,,,,,,,,,,,&..................................,,,,,,,,,,*,,,..,,,,*/((###
+(((((///******,,,,,,,,,,,,,,....................................,,,,,,,,***,,,.,,,***//(##
+(///***/**,,,,,,,,,,,,,,,,,(....*///(////...........///(///*....,,,,,,,,***,,,,,,,***/((##
+/*//*,,,,,,,,,,,,,,,,,,,,,,......,./.,.,///......,./(...//(.....(,,,,,,,***,,,,,,******/((
+****,,,,,,,,,,,***,,,,,,,,....//*  #((,(/,(/.......,(/.((. ,//....,,,,,*****,,,,,,,,,,,***
+***,,..,,,,,,,,,,,,,,,,,,,,....*, (  ., *.......  .,. .   , .,..,,,,,,,,***,,,,,,,,..,,,,,
+*,,,...,,,,,,,,,,,,,,,,,,,,(........       . ..           ....../,/,,,,,****,,,,,...,,*,,,
+**/*,,,,,,,,,,,,,,,,,,,,,/#(,.....         ..,.          .......*,/*,,,,,***,,,,,,,,,*****
+((/*,,,,,,,,,,,,,,,,,,,,,(###..........  . ..../..    ..........,*(,,,,,,,,,,,,*,,,***////
+*//*,,,,,,,**,,,,,,,,,,*(((%#(.................................*#((#(,,,,,,,,*****////////
+%##(*,,,,,*****,,,,,,,,,(,(##%(..............,................,,.,/**,,,,,,,***///////////
+%%%#/**,,,*****,,,,,,,,,,/*(,/#(,.........,.,**./............,(/*****,,,,****/////////////
+%%%(/*/////***,,,,,,,,,,,,,,,*#%#(,.......,/((/**,*(&&&@@@@@@@@@@@@&@&&%###%//////////////
+##(/,,,,,,,,,,,,,,,,,,,,,,,,,,%%&%#(,,,,*#&&@@@@@&%%%%%&&&&&%%%%%%&@&%%&%&////////////////
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*%%@@@@@@@@@@@@@@@@@/*,,,,*(%@@@@@@@@@@@&%%#////////////////
+,,,,,,,,,,,,,,,,%%%%%%%%&%&&&&&@@@@@@@@@@&&&@@@@(,..,,%@@@@@@@@@@@@@@@@///****/*//////////
+,,,,,,,,,,,,,,,,,%%%%&&&&&@@@@@@@@@@@@@@@@@@&&&.....(@@@&%/(**(&@@@@@#////*//****///*/////
+,,,,,,,,,,,,,,,,,%&@@@@@@&&&&&&&@@@@@@@@@@@&,...../*........,,,,,,/&&&%%%%(///////////////
+,,,,,,,,,,,,,,,,,,*@@@@@@@@@@@@@@@&&&&@@@@&../.........,(,...,*..,,.&@@@@@@@%%%/////*/////
+,,,,,,,,,,,,,,,,,*@@@@@@@@@@@@@@@@@@@@@@@&....*..............,/*....,*@@@@@@%%////////////
+,,,,,,,,,,,,,,,,,(@@@@@&&@@@@@@@@@@@@@@@%....*...../......,%&&@@@%(((#@@@@@%//////////////
+,,,,,,,,,,,,#*,&@@@@@@@@@@@@@@@@&&&&&&&&../....,./.............,,**##%@@@@&%//////////////
+,,,,,,******%&&&@@@@@@@&@@@@@@@@@@@@@@&........,......./....,,*/####%%%@@&(#%/////////////
+%%%%&&%%&&&&&&&@@@@@@@@@@@@@@@&&&&&&&%...............,...,,#@@@@@@&%%%%@@&&&&&&//**///////
+&&@@@@@@@&&&@&&@@@@@@@@@@@@@@@@@@@@@@,.................,(&@@@@@@@@&%%%@@@@&&&&&&&&%&%(////
+@@@@@@@@@@&&&&@@@@@@@@@@@@@@@@@@@@@@..................,#@@@@@@@@@@@%%&@@@&&&&&&&&&&&&&&&&&
+@@@@@@@@@@@@&&&@@@@@@@&@@@@@@@@@@@@.................,,#@@@@@@@@@@@@@@@@@&&&&@@@@@@@&&&&&&&
+  -->
+  </body>
+</html>
