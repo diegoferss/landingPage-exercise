@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Duck Health</title>
 </head>
-<body onresize="modificar()">
+<body onresize="modificar()" onload="carousel(), site()">
   <header class="cabecalho">
     <div class="cabecalho__container">
       <img src="imagens/pato75.png" alt="Imagem-logo" class="cabecalho__item cabecalho__item--background">
@@ -43,12 +43,15 @@
 
     <section class="principal__item principal__item--sobre" id="sobre">
       <div class="principal__container principal__container--sobre">
-        <div class="principal__carousel">
-          <img src="imagens/doctor-50.png" alt="" class="principal__imagem">
-        </div>
+        <button class="principal__carousel">
+          <img src="imagens/doctor-50.png" alt="" class="principal__imagem principal__imagem--carousel">
+          <input type="radio" name="aba" id="" class="principal__radio principal__radio--inicio radioChecked" onclick="mudarPosicao(0)">
+          <input type="radio" name="aba" id="" class="principal__radio radioChecked" onclick="mudarPosicaoDois()">
+          <input type="radio" name="aba" id="" class="principal__radio principal__radio--fim radioChecked" onclick="mudarPosicaoTres()">
+        </button>
         <div class="principal__sobre">
           <h2 class="principal__subtitulo">Sobre Nós</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, repellat! Sed sit illum tenetur laudantium porro dolore quisquam odit inventore officiis magnam nam, error quaerat dicta, recusandae doloribus non voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aliquid sit sequi amet officiis molestias cumque a quas delectus minus quae dolorem minima soluta veritatis adipisci et, quisquam molestiae voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, inventore reiciendis modi esse dolorem unde sit consectetur dignissimos.</p>
+          <p class="principal__paragrafoSobre">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, repellat! Sed sit illum tenetur laudantium porro dolore quisquam odit inventore officiis magnam nam, error quaerat dicta, recusandae doloribus non voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aliquid sit sequi amet officiis molestias cumque a quas delectus minus quae dolorem minima soluta veritatis adipisci et, quisquam molestiae voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, inventore reiciendis modi esse dolorem unde sit consectetur dignissimos.</p>
         </div>
       </div>
     </section>
